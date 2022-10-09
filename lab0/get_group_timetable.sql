@@ -22,3 +22,6 @@ FROM "Class"
 	INNER JOIN "Class_format"
 		ON "Class"."Тип пары" = "Class_format"."ID"
 WHERE "Группа" = :Enter_Group
+ORDER BY
+	"Weekday"."ID" ASC,
+	"Номер пары" ASC
